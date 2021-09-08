@@ -355,8 +355,8 @@ def main():
 
     model.resize_token_embeddings(len(tokenizer))
 
-    if model.config.decoder_start_token_id is None:
-        raise ValueError("Make sure that `config.decoder_start_token_id` is correctly defined")
+    #if model.config.decoder_start_token_id is None:
+     #   raise ValueError("Make sure that `config.decoder_start_token_id` is correctly defined")
 
     prefix = data_args.source_prefix if data_args.source_prefix is not None else ""
 
